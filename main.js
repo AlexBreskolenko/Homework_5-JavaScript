@@ -45,3 +45,27 @@ console.log(post.author);
 console.log(post.comments[0].rating.dislikes);
 console.log(post.comments[1].userId);
 console.log(post.comments[1].text);
+
+//*************Task 3
+const products = [
+  {
+    id: 3,
+    price: 200,
+  },
+  {
+    id: 4,
+    price: 900,
+  },
+  {
+    id: 1,
+    price: 1000,
+  },
+];
+
+products.forEach((elem) => {
+  elem.price -= (elem.price / 100) * 15;
+});
+
+products.forEach((elem) => {
+  console.log(elem.price);
+});
