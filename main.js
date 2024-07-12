@@ -105,3 +105,21 @@ console.log(resultProduct);
 //Задание 2
 product.sort((a, b) => a.price - b.price);
 console.log(product);
+
+//************Task 5
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = [
+  "понедельник",
+  "вторник",
+  "среда",
+  "четверг",
+  "пятница",
+  "суббота",
+  "воскресенье",
+];
+
+const resultDay = {};
+en.map((item, index) => {
+    resultDay[item] = ru[index];
+})
+console.log(resultDay);
